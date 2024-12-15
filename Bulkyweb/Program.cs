@@ -1,4 +1,4 @@
-using Bulkyweb.Data;
+using Bulky.DataAcess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
