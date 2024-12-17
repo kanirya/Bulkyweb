@@ -39,12 +39,25 @@
 			</div>
 		</nav>
 	</header>
-	<div class="container">
-		<main role="main" class="pb-3">
-			<partial name="_Notification" />
-			@RenderBody()
-		</main>
+	<div class="row">
+		<div class="col-sm-2">
+			<ul class="list-group">
+                            <li class="list-group-item"><a href="#">Dashboard</a></li>
+                            <li class="list-group-item"><a href="#">Settings</a></li>
+                            <li class="list-group-item"><a href="#">Profile</a></li>
+                            <li class="list-group-item"><a href="#">Logout</a></li>
+                        </ul>
+		</div>
+		<div class="col-sm-10">
+			<div class="container">
+				<main role="main" class="pb-3">
+					<partial name="_Notification" />
+					@RenderBody()
+				</main>
+			</div>
+		</div>
 	</div>
+	
 
 	<footer class="border-top  footer  bg-primary text-muted">
 		<div class="text-center">
@@ -57,3 +70,5 @@
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+
